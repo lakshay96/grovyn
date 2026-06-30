@@ -1,0 +1,40 @@
+import rateLimit from "express-rate-limit";
+
+export const authLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 30,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: {
+    error: {
+      message: "Too many authentication attempts. Try again later.",
+      code: "RATE_LIMITED",
+    },
+  },
+});
+
+export const apiLimiter = rateLimit({
+  windowMs: 60_000,
+  max: 120,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: {
+    error: {
+      message: "Too many requests. Please slow down.",
+      code: "RATE_LIMITED",
+    },
+  },
+});
+
+export const aiLimiter = rateLimit({
+  windowMs: 60_000,
+  max: 20,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: {
+    error: {
+      message: "Too many AI requests. Please slow down.",
+      code: "RATE_LIMITED",
+    },
+  },
+});

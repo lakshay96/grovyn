@@ -16,7 +16,7 @@ Returned with the correct HTTP status (`400/401/403/404/409/500`).
 |---|---|---|---|---|
 | POST | `/auth/register` | — | `{name,email,password}` | `{ user, token }` |
 | POST | `/auth/login` | — | `{email,password}` | `{ user, token }` |
-| GET | `/auth/me` | ✅ | — | `{ user }` |
+| GET | `/auth/me` | Built | — | `{ user }` |
 
 > `user` **never** includes `passwordHash`.
 

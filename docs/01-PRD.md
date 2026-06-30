@@ -104,19 +104,19 @@ Surfacing these is the difference between a tech demo and a product.
 
 | Capability | MVP (now) | Roadmap |
 |---|:---:|---|
-| WebGL hero landing | ✅ | Generative scene variants |
-| Property catalog + filters + search | ✅ | Map-based discovery, saved searches |
-| 3D model / procedural floor plan | ✅ | Photogrammetry capture, furniture staging |
-| WebXR AR placement | ✅ | Occlusion, measurement tools, lighting estimation |
-| 360° virtual tour + hotspots | ✅ | Dollhouse view, guided cinematic tours |
-| AI concierge (heuristic + optional LLM) | ✅ | RAG over docs, voice concierge |
-| Hybrid search | ✅ | True vector embeddings + reranking |
-| Recommendations | ✅ | Collaborative filtering, learned ranking |
-| Live agent chat | ✅ | Video, scheduling, co-browsing |
-| Multi-user virtual showroom | ✅ | Spatial audio, full WebXR multiplayer |
-| Wishlist / recently viewed | ✅ | Price-drop & status alerts |
-| Inquiries + agent inbox | ✅ | CRM, automated qualification |
-| Analytics funnel dashboard | ✅ | Cohorts, attribution, A/B testing |
+| WebGL hero landing | Built | Generative scene variants |
+| Property catalog + filters + search | Built | Map-based discovery, saved searches |
+| 3D model / procedural floor plan | Built | Photogrammetry capture, furniture staging |
+| WebXR AR placement | Built | Occlusion, measurement tools, lighting estimation |
+| 360° virtual tour + hotspots | Built | Dollhouse view, guided cinematic tours |
+| AI concierge (heuristic + optional LLM) | Built | RAG over docs, voice concierge |
+| Hybrid search | Built | True vector embeddings + reranking |
+| Recommendations | Built | Collaborative filtering, learned ranking |
+| Live agent chat | Built | Video, scheduling, co-browsing |
+| Multi-user virtual showroom | Built | Spatial audio, full WebXR multiplayer |
+| Wishlist / recently viewed | Built | Price-drop & status alerts |
+| Inquiries + agent inbox | Built | CRM, automated qualification |
+| Analytics funnel dashboard | Built | Cohorts, attribution, A/B testing |
 
 ---
 

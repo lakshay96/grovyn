@@ -77,13 +77,13 @@ flowchart LR
 
 | Variable | Web | API | Notes |
 |---|:--:|:--:|---|
-| `NEXT_PUBLIC_API_URL` | ✅ | | public; points at API `/api` |
-| `NEXT_PUBLIC_SOCKET_URL` | ✅ | | public; socket origin |
-| `MONGODB_URI` | | ✅ | secret |
-| `JWT_SECRET` / `JWT_EXPIRES` | | ✅ | secret / config |
-| `CLIENT_ORIGIN` | | ✅ | CORS + socket origin |
-| `OPENAI_API_KEY` | | ✅ | optional |
-| Cloudinary creds | | ✅ | secret (signed uploads) |
+| `NEXT_PUBLIC_API_URL` | Built | | public; points at API `/api` |
+| `NEXT_PUBLIC_SOCKET_URL` | Built | | public; socket origin |
+| `MONGODB_URI` | | Built | secret |
+| `JWT_SECRET` / `JWT_EXPIRES` | | Built | secret / config |
+| `CLIENT_ORIGIN` | | Built | CORS + socket origin |
+| `OPENAI_API_KEY` | | Built | optional |
+| Cloudinary creds | | Built | secret (signed uploads) |
 
 **No secrets in code** (SPEC §8) — all from env.
 

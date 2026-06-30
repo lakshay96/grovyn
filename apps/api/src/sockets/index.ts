@@ -1,6 +1,6 @@
 import type { Server as HttpServer } from "http";
 import { Server, type Socket } from "socket.io";
-import { env } from "../config/env";
+import { isAllowedOrigin } from "../config/env";
 import { ChatMessage } from "../models";
 import { isDbConnected } from "../config/db";
 import { verifyToken } from "../utils/jwt";
@@ -46,7 +46,9 @@ function presenceList(roomId: string): Peer[] {
 export function initSockets(httpServer: HttpServer): Server {
   const io = new Server(httpServer, {
     cors: {
-      origin: env.clientOrigin,
+      origin(origin, cb) {
+        cb(null, !origin || isAllowedOrigin(origin));
+      },
       methods: ["GET", "POST"],
       credentials: true,
     },

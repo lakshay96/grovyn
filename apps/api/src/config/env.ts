@@ -32,3 +32,15 @@ export const env = {
 };
 
 export type Env = typeof env;
+
+export function isAllowedOrigin(origin: string): boolean {
+  const allowed = env.clientOrigin
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  return (
+    allowed.includes(origin) ||
+    origin.endsWith(".vercel.app") ||
+    /^https?:\/\/localhost(:\d+)?$/.test(origin)
+  );
+}
